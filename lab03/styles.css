@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #388E3C;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+ 
+#indexhero {
+    height: 200px;
+    background: url('hero.jpg') no-repeat center/cover;
+}
+
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section */
+h2 {
+    color: #1B5E20;
+}
+
+ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    list-style-type: square;
+}
+
+/* Footer */
+footer {
+    background-color: #2E7D32;
+    font-size: 10px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+.test { /* messing with some css styles, i also found out that a dot is used to define a class selector, and a hashtag is an ID selector which is pretty neat!!*/
+    font-style: italic;
+    background-color: #2E7D32;
+}
+
+#lab-3 {
+    font-weight: bold;
+    color:#0f61a3;
+}
