@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #388E3C;
+    padding: 10px;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+text-align: center;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Test */
+article {
+    background: #f0f7e9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Section */
+h2 {
+    color: #1B5E20;
+}
+
+.GitHub-LinkBox {
+    border: 2px solid #d30db9;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f7e9;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+    list-style-type: square;
+}
+
+/* Footer */
+footer {
+    background-color: #2E7D32;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* I took inspiration from a previous project I worked on with others and wrote this. I hope this is okay for the assignment since it should help improve the overall mobile experience, or if the screen is smaller than 800 pixels :D */
+@media (max-width: 800px) {
+    main {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
