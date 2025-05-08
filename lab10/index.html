@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10 - Standards Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>What are XML Character Entities?</h1>
+    </header>
+    <!-- Figured i'd do this since the navbar has a div inside the styles.sss file-->
+    <div id="navbar">
+        <nav>
+            <a href="index.html">What is it?</a>
+            <a href="whatsitsimportance.html">Why is it important?</a>
+            <a href="howisitused.html">How's it used?</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+    </div>
+
+    <main>
+        <h2>So what are they?</h2>
+        <!-- Did the same thing here-->
+         <div class="content">
+            <p>XML Character entities are certain codes yo can input in both XML and HTML to display a specific character. For example, if you wanted to type in the less than sign without messing up your XML or HTML code, you would insert `&amp;lt;` instead of the symbol, as it won't mess up your code. These references can be very useful for certain webpages and there are many references you can use to help enhance your webpage! Just be sure to remember that these references always start with an ampersand (&) which is the and symbol, include the specific name or number, then end it with a semicolon.</p>
+            <p>For entity references, there are two main types of references, one is a named reference while the other is numeric. Named references use a specific name thats defines already, such as `&amp;amp;` which is an ampersand as specified in the name, and `&amp;quot;` are for quotation marks. Numeric references are much different as they're based on unicode values, and they're typically written in decimal or hexidecimal values. These all allow developers to display a specific character which won't cause their IDE to start yelling at them because they used a less than symbol rather than a named character reference.</p>
+            <p>Another really neat thing about character entities is that they help to ensure that the content you're displaying is interpreted properly! What this means is that your web page might display certain information incorrectly or completely break without the use of them. Based off the different references I've seen, they can be really helpful if you're displaying math equations that use the greater than or less than symbol, or even with typographic symbols that other languages may use! This helps to ensure that your website is neat, works in browsers, and easy to work with in the future if you need to make any essential changes to your webpage.</p>
+         </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Tyler Ruark</p>
+    </footer>
+</body>
+</html>
