@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #424442;
+    background-image: url(images/ab06f377a16706f31a383fcbbf76c8420af037a1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #2E7D32;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Add horizontal spacing between links */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: disc;
+    display: flex;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+    text-align: center;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #388E3C;
+    padding: 10px;
+    display: flex; /* Flexbox for the navbar */
+    justify-content: center; /* Center the links horizontally */
+}
+  
+  #navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+
+/* Main */
+main {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+/* Section */
+h2 {
+    color: #1B5E20;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E7D32;
+    font-size: 18px;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+/* This is for a mobile users view */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    table, thead, tbody, tr {
+        display: block;
+        width: 100%;
+    }
+
+    th  {
+        display: block;
+        width: 100%;
+        display: none;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        display: block;
+        width: 100%;
+    }
+}

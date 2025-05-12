@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My ePortfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Web Development Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project1.html">Lab 5</a></li>
+        <li><a href="project2.html">Lab 7</a></li>
+        <li><a href="project3.html">Lab 8</a></li>
+        <li><a href="reflection.html">Lessons Learned</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>What Did I Do In This Lab</h2>
+    <p>In Lab 7 I put together a tier list with a table and images! This lab assignment was very fun to me as I realized how easy tables were to create and how much can be done with the implementation of them.</p>
+    <h2>What I Learned From This Lab</h2>
+    <ul>
+      <li>I learned how to properly implement tables into my HTML page</li>
+      <li>I learned how to create a contact form</li>
+    </ul>
+    <h2>How Did I Accomplish This?</h2>
+    <p>Through the following code I was able to implement the tier list and the contact form!</p>
+    <!-- I had to look up "How to add code snippit to HTML to figure this part out, I hope thats okay with you! :D"-->
+    <pre>
+    <code>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;Tier&lt;/th&gt;
+            &lt;th scope="col"&gt;Character 1&lt;/th&gt;
+            &lt;th scope="col"&gt;Character 2&lt;/th&gt;
+            &lt;th scope="col"&gt;Character 3&lt;/th&gt;
+            &lt;th scope="col"&gt;Image 1&lt;/th&gt;
+            &lt;th scope="col"&gt;Image 2&lt;/th&gt;
+            &lt;th scope="col"&gt;Image 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;S&lt;/th&gt;
+            &lt;td&gt;&lt;img src="https://static.wikia.nocookie.net/spongebob/images/0/05/Squidward_stock_art.png/revision/latest?cb=20190921125123" alt="Squidward"&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/SpongeBob_SquarePants_character.png" alt="SpongeBob"&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Patrick_Star_character.png" alt="Patrick"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;A&lt;/th&gt;
+            &lt;td&gt;Mr.Krabs&lt;/td&gt;
+            &lt;td&gt;Sandy&lt;/td&gt;
+            &lt;td&gt;Plankton&lt;/td&gt;
+            &lt;td colspan="3"&gt;These three make for some great episodes, but dont touch S tier&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;B&lt;/th&gt;
+            &lt;td&gt;Mrs. Puff&lt;/td&gt;
+            &lt;td&gt;Mermaid Man&lt;/td&gt;
+            &lt;td&gt;Barnacle Boy&lt;/td&gt;
+            &lt;td colspan="3"&gt;These three characters make for some good episodes, but there arent too many of them&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;C&lt;/th&gt;
+            &lt;td&gt;Pearl&lt;/td&gt;
+            &lt;td&gt;Karen&lt;/td&gt;
+            &lt;td&gt;The Flying Dutchman&lt;/td&gt;
+            &lt;td colspan="3"&gt;They're just there for the most part, Dutchman is a very good character but he doesn't quite reach B tier&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;D&lt;/th&gt;
+            &lt;td&gt;Gary&lt;/td&gt;
+            &lt;td&gt;Larry The Lobster&lt;/td&gt;
+            &lt;td&gt;King Neptune&lt;/td&gt;
+            &lt;td colspan="3"&gt;Gary is a great pet, but he doesn't really participate much in the episodes, with some small exceptions&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1&gt;Contact Form For SpongeBob Tier List&lt;/h1&gt;
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;label for="tier"&gt;Whats Your Favorite Tier:&lt;/label&gt;
+    &lt;select id="tier" name="tier"&gt;
+        &lt;option value="s"&gt;S&lt;/option&gt;
+        &lt;option value="a"&gt;A&lt;/option&gt;
+        &lt;option value="b"&gt;B&lt;/option&gt;
+        &lt;option value="c"&gt;C&lt;/option&gt;
+        &lt;option value="d"&gt;D&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label&gt;Do you agree with the tier list at all?&lt;/label&gt;
+    &lt;input type="radio" id="agree" name="opinion" value="agree"&gt;
+    &lt;label for="agree"&gt;Yes&lt;/label&gt;
+    &lt;input type="radio" id="disagree" name="opinion" value="disagree"&gt;
+    &lt;label for="disagree"&gt;No&lt;/label&gt;
+
+    &lt;label for="SpongeBob Characters"&gt;Which characters from the show do you like? Please select all the ones you like:&lt;/label&gt;
+    &lt;input type="checkbox" id="SpongeBob" name="characters" value="SpongeBob"&gt;
+    &lt;label for="SpongeBob"&gt;SpongeBob&lt;/label&gt;
+    &lt;input type="checkbox" id="Squidward" name="characters" value="Squidward"&gt;
+    &lt;label for="Squidward"&gt;Squidward&lt;/label&gt;
+    &lt;input type="checkbox" id="Patrick" name="characters" value="Patrick"&gt;
+    &lt;label for="Patrick"&gt;Patrick&lt;/label&gt;
+    
+    &lt;label for="comment"&gt;Comments:&lt;/label&gt;
+    &lt;textarea name="comment" id="comment" rows="5"&gt;&lt;/textarea&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+    </code>
+    </pre>
+    <h2>How Did It Turn Out</h2>
+    <p>Through the HTML above I was able to create this website!</p>
+    <img src="images/Lab7.png" alt="Lab  Screenshot" />
+  </main>
+  <footer>
+    <p>By Tyler Ruark 2025</p>
+  </footer>
+</body>
+</html>
